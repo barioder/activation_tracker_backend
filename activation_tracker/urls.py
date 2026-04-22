@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from activation_tracker_app.routers.merchant import merchant_rounter
+from activation_tracker_app.routers.requirements import requirement_rounter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(merchant_rounter.urls))
+    path('', include(merchant_rounter.urls)),
+    path('', include(requirement_rounter.urls))
 ]
