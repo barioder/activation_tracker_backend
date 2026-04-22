@@ -38,8 +38,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'activation_tracker_app', # added custom app
+    # Custom apps
+    'activation_tracker_app',
 
+    # built-in Django core apps 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,7 +49,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third-party apps
     'rest_framework',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
