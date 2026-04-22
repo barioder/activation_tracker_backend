@@ -38,6 +38,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'activation_tracker_app', # added custom app
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
