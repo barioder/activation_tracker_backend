@@ -1,5 +1,4 @@
-from models.requirement import Requirement
-def save_requirement(instance: Requirement) -> None:
+def save_requirement(instance) -> None:
     """
     Custom save logic for requirement model to automatically update the parent Merchant's 
     status and stuck reason whenever a requirement changes.

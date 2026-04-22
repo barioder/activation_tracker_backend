@@ -1,6 +1,6 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
-from enums.onboarding_status import ONBOARDING_STATUS_CHOICES
+from activation_tracker_app.enums.onboarding_status import ONBOARDING_STATUS_CHOICES
 
 import uuid
 

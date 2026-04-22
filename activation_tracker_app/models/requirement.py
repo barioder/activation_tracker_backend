@@ -1,9 +1,9 @@
 from django.db import models
 from .merchant import Merchant
-from enums.document_type import TYPE_CHOICES
-from enums.document_status import STATUS_CHOICES
-from utils.requirement.save_requirement import save_requirement
-from utils.requirement.update_parent_merchant import update_parent_merchant
+from activation_tracker_app.enums.document_type import TYPE_CHOICES
+from activation_tracker_app.enums.document_status import STATUS_CHOICES
+from activation_tracker_app.utils.requirement.save_requirement import save_requirement
+from activation_tracker_app.utils.requirement.update_parent_merchant import update_parent_merchant
 import uuid
 
 

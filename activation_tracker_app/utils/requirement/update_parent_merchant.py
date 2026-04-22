@@ -1,6 +1,5 @@
-from models.requirement import Requirement
 from django.db.models import Count, Q
-def update_parent_merchant(instance:Requirement ) -> None:
+def update_parent_merchant(instance ) -> None:
 
     merchant = instance.merchant
     reqs = merchant.requirements.all()
